@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.hero-section{
+    background-image: url("../img/backrop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+}
+.hero-section h1{
+    color: white;
+    font-weight: 400;
+    font-size: 50px;
+}
+.hero-section h2::first-letter{
+    font-size: 50px;
+}
+.hero-section h2 span{
+    font-size: 50px;
+}
+.hero-section h2{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+.hero-section div{
+    padding-top: 11%;
+    padding-left: 16%;
+    
+}
+.black-box{
+    background-color: #000;
+    font-size: 80px;
+    color: white;
+    text-align: center;
+}
+.black-box h3{
+    font-weight: 400;
+}
+.black-box span{
+    font-size: 96px;
+    color: white;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.card{
+    max-width: 340px;
+    height: 400px;
+    border: 0px solid #000000;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.13);
+}
+.card img{
+    width: 100%;
+    border-radius:15px 15px 0px 0px;
+}
+.card-content{
+    padding: 20px 15px;
+}
+.card-content p{
+    margin-top: 10px;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.bottom div{
+    width: 600px;
+    height: 150px;
+    padding: 30px 20px;
+    color: white;
+    
+
+}
+.bottom div h1{
+    font-weight: 400;
+}
+.contact{
+    background-color: chocolate;
+    line-height: 30px;
+}
+.about{
+    background-color: green;
+    line-height: 30px;
+}
+@media screen and (max-width:786px) {
+    .hero-section{
+        height: 50vh;
+        width: 100%;
+    }
+    .hero-section h1{
+        font-size: 30px;
+    }
+    .hero-section h2::first-letter{
+        font-size: 30px;
+    }
+    .hero-section h2 span{
+        font-size: 30px;
+    }
+    .hero-section h2{
+        font-size: 20px;
+    }
+    .black-box{
+        font-size: 24px;
+        
+    }
+    .black-box span{
+        font-size: 34px;
+    }
+    .black-box h3{
+        padding: 15px 0px;
+    }
+    .card-container, .bottom{
+        flex-direction: column;
+    }
+    .bottom div{
+        width: 100%;
+        height: 230px;
+        min-width: 300px;
+        
+    }
+}
